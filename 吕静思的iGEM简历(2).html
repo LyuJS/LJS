@@ -1,0 +1,408 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            padding: 100px 6%;
+            background: linear-gradient(to right top, #ff1493, #2980b9);
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .profile {
+            padding: 20px 30px;
+            height: 230px;
+            background: #FFFFFF;
+            text-align: center;
+            flex: 1 1 400px;
+            position: sticky;
+            top: 20px;
+            border-right: 2px solid #333333;
+        }
+        .profile img{
+            height:200px;
+            weight:200px;
+        }
+
+        .profile h3 {
+            font-size: 20px;
+        }
+
+        .profile p {
+            color: #2980b9;
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+
+        .btn {
+            padding: 7px 20px;
+            border-radius: 5px;
+            background: #2980b9;
+            color: #FFFFFF;
+            font-size: 17px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #333333;
+        }
+
+        .information {
+            padding: 20px 30px;
+            flex: 1 1 1000px;
+            background: #FFFFFF; 
+        }
+
+        .title {
+            font-size: 25px;
+            color: #2980b9;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            font-size: 17px;
+            line-height: 2;
+            padding-bottom: 10px;
+            color: #777777;
+        }
+
+        .about .box-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .about .box-container .box {
+            flex: 1 1 250px;
+        }
+
+        .about .box-container .box h3 {
+            font-size: 15px;
+            padding: 10px 0;
+            color: #333333;
+        }
+
+        .about .box-container .box h3 span {
+            color: #777777;
+        }
+
+        .services {
+            padding: 20px 0;
+        }
+
+        .imgbox-container {
+            display: flex;
+        }
+
+        .imgbox-container .box {
+            flex: 1 1 17px;
+            text-align: center;
+            border-radius: 5px;
+            padding: 20px;
+            background: #eeeeee;
+            margin-right: 12px;
+        }
+
+        .imgbox-container .box img {
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .imgbox-container .box h3 {
+            font-size: 15px;
+            color: #777777;
+        }
+
+        .skills .box-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skills .box-container .box {
+            flex: 1 1 300px;
+        }
+
+        .skills .box-container .box:last-child {
+            margin-left: 12px;
+        }
+
+        .progress h3 {
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            color: #333333;
+            font-size: 15px;
+        }
+
+        .progress h3 span {
+            color: #777777;
+        }
+
+        .bar {
+            overflow: hidden;
+            border-radius: 50px;
+            height: 10px;
+            background: #eeeeee;
+        }
+
+        .bar span {
+            background: #2980b9;
+            height: 100%;
+            display: block;
+            border-radius: 50px;
+        }
+
+        .first {
+            width: 95%;
+        }
+
+        .second {
+            width: 80%;
+        }
+
+        .third {
+            width: 65%;
+        }
+
+        .fourth {
+            width: 70%;
+        }
+
+        .fifth {
+            width: 90%;
+        }
+
+        .sixth {
+            width: 75%;
+        }
+
+        .experience {
+            margin: 20px 0;
+        }
+
+        .experience .box-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .experience .box-container .box {
+            padding: 20px;
+            border-radius: 5px;
+            flex: 1 1 350px;
+            background: #eeeeee;
+        }
+
+        .experience .box-container .box span {
+            color: #2980b9;
+            font-size: 15px;
+        }
+
+        .experience .box-container .box h3 {
+            color: #333333;
+            font-size: 17px;
+            padding: 5px 0;
+        }
+
+        .experience .box-container .box p {
+            color: #777777;
+            line-height: 2;
+            font-size: 13px;
+        }
+
+        .contact .box-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .contact .box-container .box {
+            flex: 1 1 200px;
+            display: flex;
+        }
+
+        .contact .box-container .box i {
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            font-size: 15px;
+            border-radius: 50%;
+            background: #2980b9;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 14px;
+        }
+
+        .contact .box-container .box h3 {
+            font-size: 17px;
+            color: #333333;
+            padding-bottom: 5px;
+        }
+
+        .contact .box-container .box p {
+            font-size: 14px;
+            color: #777777;
+            line-height: 2;
+        }
+
+        .info {
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="profile">
+            <img src=" C:\Users\lenovo\Desktop\北化工\课外工作\简历照片.jpg" alt="">
+            <h3>吕静思</h3>
+            <p>2023090041</p>
+            <div class="buttons">
+                <a class="btn" href="http://nocturne.bczcdn.com/audio/1647325026464_87789/小夜简历3.0.pdf" target="_blank">下载简历</a>
+                <a class="btn" href="javascript:alert('发送成功');">发送面试邀请</a>
+            </div>
+        </div>
+
+        <div class="information">
+
+            <div class="about">
+                <h3 class="title">About Me</h3>
+                <p>My name is Lyu Jingsi, the monitor of BIO2302, with a GPA of 3.50, an average score of 90+ in biology and chemistry in the college entrance examination, 523 in CET-4, and passed the Beijing Foreign Language Comprehensive Assessment before the college entrance examination. Representing the state religion debate team and winning the runner-up in the "129" competition.</p>
+               <P>Good at python and can use front-end languages to create e-commerce websites, recruitment websites, etc. This resume also uses HTML and CSS.</p>
+                <div class="box-container">  
+                    <div class="box">
+                        <h3><span>WeChat : </span>13933606766</h3>
+                        <h3><span>E-mail : </span>2023090041@buct.edu.cn</h3>
+                        <h3><span>Applied position : </span>iGEM hp组</h3>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="services">
+                <h3 class="title">Education </h3>
+                <div class="imgbox-container">
+                    <P>School:Beijing University of Chemical Technology</p>
+                    <p>Location:Chang Ping,Beijing,China</p>
+                    <p>Date of Education:2023.9–Present</p>
+                    <p>Degree:Bachelor’s degree of bioengineering</p>
+                </div>
+            </div>
+
+            <div class="skills">
+                <h3 class="title">My Skills</h3>
+                <div class="box-container">
+                    <div class="box">
+                        <div class="progress">
+                            <h3>Communication  <span>95%</span></h3>
+                            <div class="bar"><span class="first"></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Organization  <span>80%</span></h3>
+                            <div class="bar"><span class="second"></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Patience<span>65%</span></h3>
+                            <div class="bar"><span class="third"></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Teamwork <span>70%</span></h3>
+                            <div class="bar"><span class="fourth"></span></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="progress">
+                            <h3>Questionnaire Design <span>90%</span></h3>
+                            <div class="bar"><span class="fifth"></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Experimental skills <span>75%</span></h3>
+                            <div class="bar"><span class="sixth"></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Web Design<span>65%</span></h3>
+                            <div class="bar"><span class="third"></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Digital Marketing <span>70%</span></h3>
+                            <div class="bar"><span class="fourth"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience">
+                <h3 class="title">My Experience</h3>
+                <div class="box-container">
+                    <div class="box">
+                        
+                        <h3>Biological Experiment Basics</h3>
+                        <p>Participated in the 2025 College Students' Entrepreneurship Competition  "Research on the Extraction Process and Activity of Dictyophora polysaccharide", independently designed and participated in experiments, and will soon publish a patent.</p>
+                        
+                    </div>
+                </div>
+                <div class="box-container">
+                    <div class="box">
+                        
+                        <h3>Business plan writing/PPT production</h3>
+                        <p>Participated in the National College Student Green Cosmetics Innovation and Creativity Competition, the title of the work is "Natural anti-dandruff hair care formula compounded from the perspective of micro-ecological balance", participated in market research on the plan, and produced PPT.</p>
+                        
+                    </div>
+                </div>
+                <div class="box-container">
+                    <div class="box">
+                        
+                        <h3>Personnel interviews, on-site visits and surveys</h3>
+                        <p>Participated in the "Youth Innovation Beijing" 2024 Challenge Cup red track, and participated in the municipal review of the practical research activity "Asking the Southwest Red Gene: Touching the Red Memory of the Long March on the Bluestone"</p>
+                        
+                    </div>
+                </div>
+                <div class="box-container">
+                    <div class="box">
+                        
+                        <h3>Work experience</h3>
+                        <p>I am currently a member of the first Youth League Committee of the School of International Education, and I once served as the host of the School Week evening party and organized the "Belt and Road" School Week activities. In addition,I was a model player in military training, loved playing basketball and tennis, and served as the captain of the women's basketball team of the national education school.</p>
+                        <p>I received an internship offer from WuXi AppTec in Shanghai and will be doing an offline internship during the summer vacation.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact">
+                <h3 class="title">Achievements</h3>
+                <div class="box-container">
+                    <div class="box">
+                        <i class="fas fa-map"></i>
+                        <div class="info">
+                            <h3>Chinese and Foreign Youth Forum and Career Planning Competition</h3>
+                            <p>Second place</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-phone"></i>
+                        <div class="info">
+                            <h3>'129' Freshman Debate Competition</h3>
+                            <p>Second place</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <h3>2024 People’s Scholarship</h3>
+                            <p>Single award</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
