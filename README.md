@@ -226,8 +226,7 @@
         <div class="information">
             <div class="about">
                 <h3 class="title">About Me</h3>
-                <p>My name is Lyu Jingsi, the monitor of BIO2302, with a GPA of 3.50, an average score of 90+ in biology and chemistry in the college entrance examination, 523 in CET-4, and passed the Beijing Foreign Language Comprehensive Assessment before the college entrance examination. Representing the state religion debate team and winning the runner-up in the "129" competition.</p>
-               <P>Good at python and can use front-end languages to create e-commerce websites, recruitment websites, etc. This resume also uses HTML and CSS.</p>
+                <p>Being the class president of the class during the university, in the student's association department of culture and sports to organize various activities. Passed the CET-4 and currently focusing on IELTS, I believe that I can communicate with foreign people without obstacles. Able to perform this job with good organizational skills and experience, good communication and cooperation skills.</p>
                 <div class="box-container">  
                     <div class="box">
                         <h3><span>WeChat : </span>13933606766</h3>
